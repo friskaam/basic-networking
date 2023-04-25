@@ -1,0 +1,13 @@
+# This file is used by Apache2 to configure the default virtual host.
+# If you wish to change the listening port or interface used in the
+# default configuration (/etc/apache2/ports.conf), edit this file as necessary.
+
+Listen 3000
+
+<IfModule ssl_module>
+	Listen 443
+</IfModule>
+
+<IfModule mod_gnutls.c>
+	Listen 443
+</IfModule>
